@@ -30,11 +30,10 @@ router.addSubmissions = (req, res) => {
 
 //get a list of all the submissions
 router.displayAll = (req, res) => {
-
-    res.setHeader('Content-Type', 'application/json')
     Sub.find(function (err, subs) {
         if (err)
             res.send(err)
+        else
         res.send(subs)
     })
 }
@@ -44,7 +43,7 @@ router.displayAllByDate = (req, res) => {
     res.setHeader('Content-Type', 'application/json')
     Sub.find(function (err, subs) {
         if (err) res.send(err)
-        res.send(JSON.stringify(subs, null, 3))
+        res.send(subs, null, 3)
     }).sort(mysort)
 
 }

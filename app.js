@@ -56,7 +56,7 @@ app.use('/users', usersRouter);
 
 // Custom Routes
 //gets
-app.get('/listSubmissions', subs.displayAll);
+app.get('/submissions', cors(),subs.displayAll);
 app.get('/listOneSubmission/:id', subs.findSubmissionById);
 app.get('/findByLocation/:location', subs.findByLocation);
 app.get('/all', subs.displayAllByDate);
