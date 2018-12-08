@@ -4,8 +4,7 @@ let router = express.Router()
 
 //CREATE
 router.addSubmissions = (req, res) => {
-    res.setHeader('Content-Type', 'application/json')
-    const sub = new Sub()
+    var sub = new Sub()
     sub.name = req.body.name// the requested value
     sub.age = req.body.age// the requested value
     sub.gender = req.body.gender// the requested value

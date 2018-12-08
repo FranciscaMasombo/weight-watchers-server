@@ -1,13 +1,13 @@
 let mongoose = require('mongoose');
 let SubmissionSchema =  new mongoose.Schema({
-    name: { type:String, required: true},
-    age: { type: Number, min: 1, max: 65, required: true },
-    gender: { type:String, required: true},
-    startWeight: { type:Number, required: true },
-    goalWeight:{ type:Number, required: true },
-    currentWeight:{ type:Number, required: true},
+    name: { type:String, required: false},
+    age: { type: Number, min: 1, max: 100, required: true },
+    gender: { type:String, required: false},
+    startWeight: { type:Number, required: false },
+    goalWeight:{ type:Number, required: false },
+    currentWeight:{ type:Number, required: false},
     height:{ type:Number},
-    location:{ type:String, required: true },
+    location:{ type:String, required: false },
     date: { type: Date, default: Date.now, },
 
 },
