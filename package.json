@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "test": "mocha testing/submission-test.js"
+    "test": "set NODE_ENV=test && mocha testing/submission-test.js"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -28,6 +28,7 @@
     "chai": "^3.5.0",
     "chai-http": "^2.0.1",
     "chai-things": "^0.2.0",
+    "cross-env": "^5.2.0",
     "eslint": "^4.15.0",
     "mocha": "^3.4.2",
     "ws": "3.3.2"
