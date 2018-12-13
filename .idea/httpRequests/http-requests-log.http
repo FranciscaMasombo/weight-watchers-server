@@ -1,0 +1,46 @@
+POST http://localhost:3000/login
+Accept: */*
+Cache-Control: no-cache
+
+{      email: 'gui',     password": 'password123' }
+
+<> 2018-12-13T010649.400.txt
+
+###
+
+POST http://localhost:3000/login
+Accept: */*
+Cache-Control: no-cache
+
+{     "email": "gui",     "password": "password123" }
+
+<> 2018-12-13T010557.400.txt
+
+###
+
+POST http://localhost:3000/l/login
+Accept: */*
+Cache-Control: no-cache
+
+{     "email": "gui",     "password": "password123" }
+
+<> 2018-12-13T010547.404.html
+
+###
+
+POST http://localhost:8080/l/login
+Accept: */*
+Cache-Control: no-cache
+
+{     "email": "gui",     "password": "password123" }
+
+###
+
+POST http://localhost:8080/resources
+Accept: */*
+Cache-Control: no-cache
+
+{     "email": "gui",     "password": "password123" }
+
+###
+
