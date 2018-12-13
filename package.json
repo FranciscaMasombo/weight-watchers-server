@@ -16,6 +16,8 @@
     "postbuild": "npm run server"
   },
   "dependencies": {
+    "growl": "1.10.0",
+    "superagent": "3.7.0",
     "bcrypt-nodejs": "0.0.3",
     "bcryptjs": "^2.4.3",
     "cookie-parser": "~1.4.3",
