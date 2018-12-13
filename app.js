@@ -3,29 +3,20 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-var cors = require('cors')
-
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 const subs = require("./routes/submissions");
+const users = require("./routes/auth.js");
+const app = express();
 
-var app = express();
-app.use(cors())
 var session = require('express-session');
 
 let mongoose = require('mongoose');
-//
-// var options = { server: { socketOptions: { keepAlive: 1, connectTimeoutMS: 30000 } },
-//     replset: { socketOptions: { keepAlive: 1, connectTimeoutMS : 30000 } },
-//     user: 'admin', pass: 'welcome1' };
-
+const passport = require("passport");
 var mongodbUri ='mongodb://admin:welcome1@ds135653.mlab.com:35653/wwtdb';
-// var mongodbUri = 'mongodb://ds123844.mlab.com:23844/heroku_j0mcv66c';
-//var mongooseUri =require('mongodb-uri').formatMongoose(mongodbUri);
-// mongoose.connect(mongodbUri,options);
-mongoose.connect(mongodbUri);
+mongoose.connect(mongodbUri,{ useNewUrlParser: true });
 let db = mongoose.connection;
 
 db.on('error', function (err) {
@@ -50,16 +41,27 @@ app.use(session({
     resave: true,
     saveUninitialized: true
 }));
+app.use(passport.initialize())
+app.use(passport.session())
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
+function login(req, res, next)
+{
+    if (req.isAuthenticated())
+    {
+        return next();
+    } else
+    {
+        res.status(401).send('logged in or Singup');
+    }
+}
 
 // Custom Routes
 //gets
-app.get('/submissions', cors(),subs.displayAll);
+app.get('/listSubmissions', subs.displayAll);
 app.get('/listOneSubmission/:id', subs.findSubmissionById);
 app.get('/findByLocation/:location', subs.findByLocation);
-app.get('/all', subs.displayAllByDate);
 //posts
 app.post('/add-submission',subs.addSubmissions);
 //puts
@@ -67,11 +69,56 @@ app.put('/update-submission/:id',subs.updateSubmission);
 //deletes
 app.delete('/delete-submission/:id',subs.deleteSubmission);
 
+
+app.post('/SignUp', users.SignUp);
+/// Endpoint to login
+
+app.post('/login', // wrap passport.authenticate call in a middleware function
+    function (req, res, next) {
+        // call passport authentication passing the "local" strategy name and a callback function
+        passport.authenticate('local',  {session: false},function (error, user, info) {
+            // this will execute in any case, even if a passport strategy will find an error
+            // log everything to console
+            console.log(error);
+            console.log(user);
+            console.log(info);
+
+            if (error) {
+                res.status(401).send(error);
+            } if (!user) {
+                res.status(401).send(info);
+            }req.logIn(user, (err) => {
+                if (err) {
+                    return next(err);
+                }
+                return res.json(info);
+            })//res.status(401).send(info);
+        })(req, res);
+    },
+    // function to call once successfully authenticated
+    function (req, res) {
+        res.status(200).send('logged in!');
+    });
+// Endpoint to logout
+app.get('/logout', function(req, res){
+    req.logout();
+    res.status(200).send( 'logged out!');
+    res.send(null)
+});
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
     next(createError(404));
 });
 
+app.use(session({
+    secret: 'secret',
+    resave: false,
+    saveUninitialized: true,
+    cookie: { maxAge: 600000000 }
+}));
+if (process.env.NODE_ENV !== 'test') {
+    app.use(logger('dev'));
+}
 // error handler
 app.use(function(err, req, res, next) {
     // set locals, only providing error in development
