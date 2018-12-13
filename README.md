@@ -41,32 +41,50 @@ This is the server for the Client the
 
 
 ```bash
-➥ make test
-  SUBMISSION TESTS
-    Is there anything in the database
-Successfully Connected to [ ccwtracker-test ]
-ConnectionhasbeenmadetotheDatabase
-      ✓ Is there anything in the database (547ms)
-    POST/add-submission
-POST /add-submission 200 556.721 ms - 43
-      ✓ should add a new member (572ms)
-POST /add-submission 401 3.758 ms - 1571
-      ✓ should return error new member not added and a 400 error
-    PUT /update-submission/:id
-(node:5587) DeprecationWarning: collection.findAndModify is deprecated. Use findOneAndUpdate, findOneAndReplace or findOneAndDelete instead.
-PUT /update-submission/5be0ac62fb6fc061430eb239 200 541.191 ms - 21
-      ✓ should update one submission in database (543ms)
-    Get/listOneSubmission/:id
-GET /listOneSubmission/5be0ac62fb6fc061430eb239 200 536.411 ms - 26
-      ✓ should find one submission by id (539ms)
-GET /listSubmissions/00000000080000 404 6.104 ms - 5395
-      ✓ should return an error message and a 404 error
-    DELETE /delete-submission/:id
-DELETE /delete-submission/5be0ac62fb6fc061430eb239 200 539.162 ms - 23
-      ✓ should delete  (541ms)
-DELETE /delete-submission/5be0ac62fb6fc06143 200 1.506 ms - 278
-      ✓ should return an error message and a 400 error
-  8 passing (7s)
+➥  SUBMISSION TESTS
+     Is there anything in the database
+ Successfully Connected to [ ccwtracker-test ]
+ ConnectionhasbeenmadetotheDatabase
+       √ Is there anything in the database (117ms)
+     POST/add-submission
+ POST /add-submission 200 1106.255 ms - 43
+       √ should add a new member (1139ms)
+ POST /add-submission 401 11.096 ms - 1571
+       √ should return error new member not added and a 400 error
+     PUT /update-submission/:id
+ (node:12004) DeprecationWarning: collection.findAndModify is deprecated. Use findOneAndUpdate, findOneAndReplace or findOneAndDelete instead.
+ PUT /update-submission/5be0ac62fb6fc061430eb239 200 569.077 ms - 21
+       √ should update one submission in database (575ms)
+     Get/listOneSubmission/:id
+ GET /listOneSubmission/5be0ac62fb6fc061430eb239 200 327.217 ms - 26
+       √ should find one submission by id (332ms)
+ GET /listSubmissions/00000000080000 404 20.980 ms - 41
+       √ should return an error message and a 404 error
+     DELETE /delete-submission/:id
+ DELETE /delete-submission/5be0ac62fb6fc061430eb239 200 243.456 ms - 23
+       √ should delete  (250ms)
+ DELETE /delete-submission/5be0ac62fb6fc06143 200 2.396 ms - 278
+       √ should return an error message and a 400 error
+
+
+   8 passing (5s)
+
+ -------------------------------|----------|----------|----------|----------|-------------------|
+ File                           |  % Stmts | % Branch |  % Funcs |  % Lines | Uncovered Line #s |
+ -------------------------------|----------|----------|----------|----------|-------------------|
+ All files                      |     62.5 |    21.05 |    31.43 |    62.83 |                   |
+  weight-watchers-server        |    70.42 |    21.43 |       30 |    70.42 |                   |
+   app.js                       |    70.42 |    21.43 |       30 |    70.42 |... 04,105,106,120 |
+  weight-watchers-server/models |    84.62 |      100 |        0 |    84.62 |                   |
+   submissions-model.js         |      100 |      100 |      100 |      100 |                   |
+   users-models.js              |    77.78 |      100 |        0 |    77.78 |             11,14 |
+  weight-watchers-server/routes |    54.63 |    20.83 |    34.78 |    55.14 |                   |
+   auth.js                      |    24.44 |        0 |        0 |       25 |... 55,64,65,66,68 |
+   index.js                     |       80 |      100 |        0 |       80 |                 6 |
+   submissions.js               |    75.47 |       50 |    66.67 |    75.47 |... 66,67,68,69,72 |
+   users.js                     |       80 |      100 |        0 |       80 |                 6 |
+ -------------------------------|----------|----------|----------|----------|-------------------|
+
 ```
 ### Continuous Integration and Test results
 
