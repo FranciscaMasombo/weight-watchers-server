@@ -2,3 +2,15 @@ dist: trusty
 language: node_js
 node_js:
   - stable
+script:
+  - npm run coverage
+after_success:
+  - npm run publish-coverage
+branches:
+only: development
+notifications:
+email:
+  recipients:
+    - frmm97@gmail.com
+  on_success: never
+  on_failure: always
