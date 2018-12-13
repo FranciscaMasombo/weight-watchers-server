@@ -74,22 +74,6 @@ https://travis-ci.org/FranciscaMasombo/weight-watchers-server
 
    8 passing (5s)
 
- -------------------------------|----------|----------|----------|----------|-------------------|
- File                           |  % Stmts | % Branch |  % Funcs |  % Lines | Uncovered Line #s |
- -------------------------------|----------|----------|----------|----------|-------------------|
- All files                      |     62.5 |    21.05 |    31.43 |    62.83 |                   |
-  weight-watchers-server        |    70.42 |    21.43 |       30 |    70.42 |                   |
-   app.js                       |    70.42 |    21.43 |       30 |    70.42 |... 04,105,106,120 |
-  weight-watchers-server/models |    84.62 |      100 |        0 |    84.62 |                   |
-   submissions-model.js         |      100 |      100 |      100 |      100 |                   |
-   users-models.js              |    77.78 |      100 |        0 |    77.78 |             11,14 |
-  weight-watchers-server/routes |    54.63 |    20.83 |    34.78 |    55.14 |                   |
-   auth.js                      |    24.44 |        0 |        0 |       25 |... 55,64,65,66,68 |
-   index.js                     |       80 |      100 |        0 |       80 |                 6 |
-   submissions.js               |    75.47 |       50 |    66.67 |    75.47 |... 66,67,68,69,72 |
-   users.js                     |       80 |      100 |        0 |       80 |                 6 |
- -------------------------------|----------|----------|----------|----------|-------------------|
-
 ```
 
 #### Coverage     [![Coverage Status](https://coveralls.io/repos/github/FranciscaMasombo/weight-watchers-server/badge.svg?branch=master)](https://coveralls.io/github/FranciscaMasombo/weight-watchers-server?branch=master) 
