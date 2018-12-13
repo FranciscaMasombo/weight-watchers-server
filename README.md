@@ -1,4 +1,6 @@
-# weight-watchers-server          [![Build Status](https://travis-ci.org/FranciscaMasombo/weight-watchers-server.svg?branch=master)](https://travis-ci.org/FranciscaMasombo/weight-watchers-server)
+# weight-watchers-server          [![Build Status](https://travis-ci.org/FranciscaMasombo/weight-watchers-server.svg?branch=master)](https://travis-ci.org/FranciscaMasombo/weight-watchers-server)            [![Coverage Status](https://coveralls.io/repos/github/FranciscaMasombo/weight-watchers-server/badge.svg?branch=master)](https://coveralls.io/github/FranciscaMasombo/weight-watchers-server?branch=master)
+
+
 
 ### Table of contents
 
@@ -26,23 +28,44 @@ Assignment for Web dev
 This is the server for the Client the
 
 ## API endpoints
+![Screenshot](Capture.png)
 
 ## Data storage
+
+````bash
+
+let SubmissionSchema =  new mongoose.Schema({
+    fname: { type:String, required: true},
+    lname: { type:String, required: true},
+    email: { type: String, required: true },
+    number: { type: String, required: true },
+    gender: { type:String, required: true},
+    age: { type: Number, min: 16, max: 100, required: true },
+    startWeight: { type:Number, required: true },
+    goalWeight:{ type:Number, required: true },
+    currentWeight:{ type:Number, required: true},
+    height:{ type:Number},
+    location:{ type:String, required: true },
+    date: { type: Date, default: Date.now, },
+    note: {type: String, required: true},
+    user: {type: UserSchema.ObjectId, ref: 'user'},
+},  {collection: 'sub'});
+
+````
 
 ## Client
 
 ## Testing
 
-     $ npx cypress run --spec cypress/integration/tests addsubs.spec.js
-     $ npx cypress run --spec cypress/integration/tests home.spec.js
-     $ mocha test/submissions-model-test.js
+    $ npm cross-env NODE_ENV=test nyc --reporter=lcov --reporter=text mocha test/submissions-model-test.js
+    $ npm cross-env NODE_ENV=test PORT=4000 nyc mocha test/submissions-model-test.js",
+    $ npm nyc report --reporter=text-lcov | coveralls
 
 ### Continuous Integration and Test results
 
-[![Build Status](https://travis-ci.org/FranciscaMasombo/weight-watchers-server.svg?branch=master)](https://travis-ci.org/FranciscaMasombo/weight-watchers-server)
+#### Build Status         [![Build Status](https://travis-ci.org/FranciscaMasombo/weight-watchers-server.svg?branch=master)](https://travis-ci.org/FranciscaMasombo/weight-watchers-server)
 
 https://travis-ci.org/FranciscaMasombo/weight-watchers-server
-
 
 ```bash
 ➥  SUBMISSION TESTS
@@ -73,26 +96,34 @@ https://travis-ci.org/FranciscaMasombo/weight-watchers-server
 
    8 passing (5s)
 
- -------------------------------|----------|----------|----------|----------|-------------------|
- File                           |  % Stmts | % Branch |  % Funcs |  % Lines | Uncovered Line #s |
- -------------------------------|----------|----------|----------|----------|-------------------|
- All files                      |     62.5 |    21.05 |    31.43 |    62.83 |                   |
-  weight-watchers-server        |    70.42 |    21.43 |       30 |    70.42 |                   |
-   app.js                       |    70.42 |    21.43 |       30 |    70.42 |... 04,105,106,120 |
-  weight-watchers-server/models |    84.62 |      100 |        0 |    84.62 |                   |
-   submissions-model.js         |      100 |      100 |      100 |      100 |                   |
-   users-models.js              |    77.78 |      100 |        0 |    77.78 |             11,14 |
-  weight-watchers-server/routes |    54.63 |    20.83 |    34.78 |    55.14 |                   |
-   auth.js                      |    24.44 |        0 |        0 |       25 |... 55,64,65,66,68 |
-   index.js                     |       80 |      100 |        0 |       80 |                 6 |
-   submissions.js               |    75.47 |       50 |    66.67 |    75.47 |... 66,67,68,69,72 |
-   users.js                     |       80 |      100 |        0 |       80 |                 6 |
- -------------------------------|----------|----------|----------|----------|-------------------|
-
 ```
 
+#### Coverage     [![Coverage Status](https://coveralls.io/repos/github/FranciscaMasombo/weight-watchers-server/badge.svg?branch=master)](https://coveralls.io/github/FranciscaMasombo/weight-watchers-server?branch=master)
+```bash
+➥
+=============================== Coverage summary ===============================
+Statements   : 62.5% ( 120/192 )
+Branches     : 21.05% ( 8/38 )
+Functions    : 31.43% ( 11/35 )
+Lines        : 62.83% ( 120/191 )
+================================================================================
+The command "npm run coverage" exited with 0.
+```
 ## Code
 
+``` bash
+// Custom Routes
+//gets
+app.get('/listSubmissions', subs.displayAll);
+app.get('/listOneSubmission/:id', subs.findSubmissionById);
+app.get('/findByLocation/:location', subs.findByLocation);
+//posts
+app.post('/add-submission',subs.addSubmissions);
+//puts
+app.put('/update-submission/:id',subs.updateSubmission);
+//deletes
+app.delete('/delete-submission/:id',subs.deleteSubmission);
+```
 ## Build Setup
 
 ``` bash
@@ -119,6 +150,3 @@ npm test
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
-
-## Client
-
