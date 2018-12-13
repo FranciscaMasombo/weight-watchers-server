@@ -27,8 +27,6 @@ This is the server for the Client the
 
 ## API endpoints
 
-![Screenshot](Capture.png)
-
 ## Data storage
 
 ## Client
