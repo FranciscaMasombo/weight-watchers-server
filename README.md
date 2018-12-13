@@ -1,4 +1,4 @@
-# weight-watchers-server         [![Build Status](https://travis-ci.org/FranciscaMasombo/weight-watchers-server.svg?branch=master)](https://travis-ci.org/FranciscaMasombo/weight-watchers-server)
+# weight-watchers-server          [![Build Status](https://travis-ci.org/FranciscaMasombo/weight-watchers-server.svg?branch=master)](https://travis-ci.org/FranciscaMasombo/weight-watchers-server)
 
 ### Table of contents
 
@@ -70,9 +70,10 @@ DELETE /delete-submission/5be0ac62fb6fc06143 200 1.506 ms - 278
 ```
 ### Continuous Integration and Test results
 
-. .https://travis-ci.org/FranciscaMasombo/weight-watchers-client
+[![Build Status](https://travis-ci.org/FranciscaMasombo/weight-watchers-server.svg?branch=master)](https://travis-ci.org/FranciscaMasombo/weight-watchers-server)
 
-> A Vue.js project
+https://travis-ci.org/FranciscaMasombo/weight-watchers-server
+
 ## Code
 
 ## Build Setup
