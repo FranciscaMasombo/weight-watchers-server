@@ -1,4 +1,6 @@
-# weight-watchers-server          [![Build Status](https://travis-ci.org/FranciscaMasombo/weight-watchers-server.svg?branch=master)](https://travis-ci.org/FranciscaMasombo/weight-watchers-server)
+# weight-watchers-server          [![Build Status](https://travis-ci.org/FranciscaMasombo/weight-watchers-server.svg?branch=master)](https://travis-ci.org/FranciscaMasombo/weight-watchers-server)            [![Coverage Status](https://coveralls.io/repos/github/FranciscaMasombo/weight-watchers-server/badge.svg?branch=master)](https://coveralls.io/github/FranciscaMasombo/weight-watchers-server?branch=master)             
+
+
 
 ### Table of contents
 
@@ -33,16 +35,15 @@ This is the server for the Client the
 
 ## Testing
 
-     $ npx cypress run --spec cypress/integration/tests addsubs.spec.js
-     $ npx cypress run --spec cypress/integration/tests home.spec.js
-     $ mocha test/submissions-model-test.js
+    $ npm cross-env NODE_ENV=test nyc --reporter=lcov --reporter=text mocha test/submissions-model-test.js
+    $ npm cross-env NODE_ENV=test PORT=4000 nyc mocha test/submissions-model-test.js",
+    $ npm nyc report --reporter=text-lcov | coveralls
      
 ### Continuous Integration and Test results
 
-[![Build Status](https://travis-ci.org/FranciscaMasombo/weight-watchers-server.svg?branch=master)](https://travis-ci.org/FranciscaMasombo/weight-watchers-server)
+#### Build Status         [![Build Status](https://travis-ci.org/FranciscaMasombo/weight-watchers-server.svg?branch=master)](https://travis-ci.org/FranciscaMasombo/weight-watchers-server)
 
 https://travis-ci.org/FranciscaMasombo/weight-watchers-server
-
 
 ```bash
 ➥  SUBMISSION TESTS
@@ -91,6 +92,17 @@ https://travis-ci.org/FranciscaMasombo/weight-watchers-server
 
 ```
 
+#### Coverage     [![Coverage Status](https://coveralls.io/repos/github/FranciscaMasombo/weight-watchers-server/badge.svg?branch=master)](https://coveralls.io/github/FranciscaMasombo/weight-watchers-server?branch=master) 
+```bash
+➥
+=============================== Coverage summary ===============================
+Statements   : 62.5% ( 120/192 )
+Branches     : 21.05% ( 8/38 )
+Functions    : 31.43% ( 11/35 )
+Lines        : 62.83% ( 120/191 )
+================================================================================
+The command "npm run coverage" exited with 0.
+```
 ## Code
 
 ## Build Setup
