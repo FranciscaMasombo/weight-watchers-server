@@ -16,8 +16,3 @@ email:
     - frmm97@gmail.com
   on_success: never
   on_failure: always
-script:
-  - npm run coverage
-  - npm run check-coverage
-after_success:
-  - npm run report-coverage
