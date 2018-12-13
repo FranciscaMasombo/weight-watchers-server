@@ -1,4 +1,4 @@
-# weight-watchers-server
+# weight-watchers-server         [![Build Status](https://travis-ci.org/FranciscaMasombo/weight-watchers-server.svg?branch=master)](https://travis-ci.org/FranciscaMasombo/weight-watchers-server)
 
 ### Table of contents
 
