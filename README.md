@@ -28,7 +28,7 @@ Assignment for Web dev
 This is the server for the Client the
 
 ## API endpoints
-![Screenshot](Capture.png)
+![Screenshot](photos/Capture.png)
 
 ## Data storage
 

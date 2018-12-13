@@ -4,10 +4,7 @@
     <bookmark url="file://$APPLICATION_CONFIG_DIR$/javascript/nodejs/10.14.1/node-typings/node_modules/@types/node/index.d.ts" line="263" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0a6add3-73bd-41cd-8b51-dff8574913d3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="d0a6add3-73bd-41cd-8b51-dff8574913d3" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -46,15 +43,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="184">
               <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" column="70" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="8" selection-end-column="70" />
             </state>
           </provider>
         </entry>
@@ -108,12 +96,21 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="391">
-                <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+              <first_editor relative-caret-position="468">
+                <caret line="151" column="173" selection-start-line="151" selection-start-column="173" selection-end-line="151" selection-end-column="173" />
               </first_editor>
               <second_editor>
                 <markdownNavigatorState />
               </second_editor>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/submissions-model.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="9" column="49" lean-forward="true" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -164,9 +161,9 @@
     <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-11" />
-    <option name="width" value="980" />
-    <option name="height" value="1091" />
+    <option name="x" value="-12" />
+    <option name="width" value="981" />
+    <option name="height" value="1092" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -181,6 +178,11 @@
             <path>
               <item name="weight-watchers-server" type="b2602c69:ProjectViewProjectNode" />
               <item name="weight-watchers-server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="weight-watchers-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weight-watchers-server" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="weight-watchers-server" type="b2602c69:ProjectViewProjectNode" />
@@ -414,7 +416,7 @@
       <workItem from="1544640977608" duration="13712000" />
       <workItem from="1544657289381" duration="16346000" />
       <workItem from="1544673697138" duration="519000" />
-      <workItem from="1544689120028" duration="11251000" />
+      <workItem from="1544689120028" duration="11608000" />
     </task>
     <task id="LOCAL-00001" summary="updates">
       <created>1544669519832</created>
@@ -542,7 +544,21 @@
       <option name="project" value="LOCAL" />
       <updated>1544701186137</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="updates">
+      <created>1544703567749</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1544703567749</updated>
+    </task>
+    <task id="LOCAL-00020" summary="updates">
+      <created>1544703904391</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1544703904391</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -578,7 +594,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117921000" />
+    <option name="totallyTimeSpent" value="118278000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -591,7 +607,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48557693" visible="true" weight="0.1836248" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.33068362" />
@@ -782,13 +797,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/passport.js" />
-    <entry file="file://$PROJECT_DIR$/models/submissions-model.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" column="51" lean-forward="true" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/mongoose/lib/model.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
@@ -943,11 +951,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/models/submissions-model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="49" lean-forward="true" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="391">
-            <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+          <first_editor relative-caret-position="468">
+            <caret line="151" column="173" selection-start-line="151" selection-start-column="173" selection-end-line="151" selection-end-column="173" />
           </first_editor>
           <second_editor>
             <markdownNavigatorState />
