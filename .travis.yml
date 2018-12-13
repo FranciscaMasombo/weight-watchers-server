@@ -2,3 +2,9 @@ dist: trusty
 language: node_js
 node_js:
   - stable
+notifications:
+email:
+  recipients:
+    - frmm97@gmail.com
+  on_success: never
+  on_failure: always
