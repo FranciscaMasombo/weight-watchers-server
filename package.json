@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "prebuild": "npm-run-all test clean",
-    "test": "cross-env NODE_ENV=test mocha --compilers js:babel-core/register test/submissions-model-test.js",
+    "test": "cross-env NODE_ENV=test nyc --reporter=lcov --reporter=text mocha test/submissions-model-test.js",
     "build": "babel ./ --out-dir lib/ --ignore ./node_modules,./.babelrc,./package.json,./package-lock.json,./test --copy-files",
     "server": "node lib/bin/www",
     "clean": "rimraf ./lib && mkdir lib",
@@ -44,6 +44,7 @@
     "chai": "^3.5.0",
     "chai-http": "^2.0.1",
     "chai-things": "^0.2.0",
+    "coveralls": "^3.0.2",
     "cross-env": "^5.2.0",
     "eslint": "^5.10.0",
     "eslint-config-google": "^0.11.0",

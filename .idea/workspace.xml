@@ -4,9 +4,14 @@
     <bookmark url="file://$APPLICATION_CONFIG_DIR$/javascript/nodejs/10.14.1/node-typings/node_modules/@types/node/index.d.ts" line="263" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0a6add3-73bd-41cd-8b51-dff8574913d3" name="Default Changelist" comment="updates">
+    <list default="true" id="d0a6add3-73bd-41cd-8b51-dff8574913d3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nycrc" beforeDir="false" afterPath="$PROJECT_DIR$/.nycrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/babel-plugin-istanbul/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/babel-plugin-istanbul/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/babel-plugin-istanbul/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/babel-plugin-istanbul/lib/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/babel-plugin-istanbul/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/babel-plugin-istanbul/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/nyc/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nyc/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -27,8 +32,35 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="11" column="56" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
+            <state relative-caret-position="69">
+              <caret line="6" column="109" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="109" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.travis.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="322">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.babelrc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.nycrc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
@@ -64,12 +96,12 @@
         <option value="$PROJECT_DIR$/routes/submissions.js" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/.eslintignore" />
-        <option value="$PROJECT_DIR$/.babelrc" />
-        <option value="$PROJECT_DIR$/.nycrc" />
         <option value="$PROJECT_DIR$/.eslintrc.json" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/.nycrc" />
+        <option value="$PROJECT_DIR$/.babelrc" />
         <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
@@ -78,7 +110,7 @@
     <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-135" />
+    <option name="x" value="-144" />
     <option name="y" value="-11" />
     <option name="width" value="1944" />
     <option name="height" value="1101" />
@@ -96,6 +128,11 @@
             <path>
               <item name="weight-watchers-server" type="b2602c69:ProjectViewProjectNode" />
               <item name="weight-watchers-server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="weight-watchers-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weight-watchers-server" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="weight-watchers-server" type="b2602c69:ProjectViewProjectNode" />
@@ -238,7 +275,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.prebuild">
+  <component name="RunManager" selected="npm.test">
     <configuration name="clean" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -291,10 +328,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.test" />
         <item itemvalue="npm.prebuild" />
         <item itemvalue="npm.clean" />
         <item itemvalue="npm.coverage" />
-        <item itemvalue="npm.test" />
         <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
@@ -321,7 +358,7 @@
       <workItem from="1544640977608" duration="13712000" />
       <workItem from="1544657289381" duration="16346000" />
       <workItem from="1544673697138" duration="519000" />
-      <workItem from="1544689120028" duration="6500000" />
+      <workItem from="1544689120028" duration="7738000" />
     </task>
     <task id="LOCAL-00001" summary="updates">
       <created>1544669519832</created>
@@ -407,7 +444,14 @@
       <option name="project" value="LOCAL" />
       <updated>1544697583148</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="updates">
+      <created>1544698165063</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1544698165063</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -443,7 +487,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113170000" />
+    <option name="totallyTimeSpent" value="114408000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -456,23 +500,22 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48873484" visible="true" weight="0.3290938" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48725212" weight="0.3290938" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.33116883" />
-      <window_info id="npm" order="2" sideWeight="0.51126516" side_tool="true" weight="0.21860096" />
+      <window_info id="npm" order="2" sideWeight="0.5127479" side_tool="true" weight="0.3290938" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32409012" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49920508" weight="0.3884007" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49920508" weight="0.81109184" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.7065026" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32928944" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49920508" weight="0.32582322" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50317967" side_tool="true" weight="0.63951474" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49682036" weight="0.63951474" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5047695" side_tool="true" weight="0.63951474" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49523053" visible="true" weight="0.63951474" />
       <window_info anchor="bottom" id="Inspection Results" order="11" weight="0.8330404" />
       <window_info anchor="bottom" id="TypeScript" order="12" weight="0.32864675" />
       <window_info active="true" anchor="bottom" id="REST Client" order="13" weight="0.77642983" />
@@ -752,13 +795,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.babelrc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.eslintrc.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
@@ -787,13 +823,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.travis.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
@@ -806,17 +835,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.nycrc">
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
-          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.nycrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.babelrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="11" column="56" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
+        <state relative-caret-position="69">
+          <caret line="6" column="109" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="109" />
         </state>
       </provider>
     </entry>
