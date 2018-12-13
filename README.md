@@ -27,6 +27,8 @@ This is the server for the Client the
 
 ## API endpoints
 
+![Screenshot](Capture.png)
+
 ## Data storage
 
 ## Client
@@ -36,7 +38,7 @@ This is the server for the Client the
      $ npx cypress run --spec cypress/integration/tests addsubs.spec.js
      $ npx cypress run --spec cypress/integration/tests home.spec.js
      $ mocha test/submissions-model-test.js
-     
+
 ### Continuous Integration and Test results
 
 [![Build Status](https://travis-ci.org/FranciscaMasombo/weight-watchers-server.svg?branch=master)](https://travis-ci.org/FranciscaMasombo/weight-watchers-server)
