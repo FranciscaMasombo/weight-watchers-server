@@ -89,6 +89,19 @@ The command "npm run coverage" exited with 0.
 ```
 ## Code
 
+``` bash
+// Custom Routes
+//gets
+app.get('/listSubmissions', subs.displayAll);
+app.get('/listOneSubmission/:id', subs.findSubmissionById);
+app.get('/findByLocation/:location', subs.findByLocation);
+//posts
+app.post('/add-submission',subs.addSubmissions);
+//puts
+app.put('/update-submission/:id',subs.updateSubmission);
+//deletes
+app.delete('/delete-submission/:id',subs.deleteSubmission);
+```
 ## Build Setup
 
 ``` bash
