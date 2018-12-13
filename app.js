@@ -7,14 +7,14 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
-const subs = require("./routes/submissions");
-const users = require("./routes/auth.js");
+const subs = require('./routes/submissions');
+const users = require('./routes/auth.js');
 const app = express();
 
 var session = require('express-session');
 
 let mongoose = require('mongoose');
-const passport = require("passport");
+const passport = require('passport');
 var mongodbUri ='mongodb://admin:welcome1@ds135653.mlab.com:35653/wwtdb';
 mongoose.connect(mongodbUri,{ useNewUrlParser: true });
 let db = mongoose.connection;
@@ -41,8 +41,8 @@ app.use(session({
     resave: true,
     saveUninitialized: true
 }));
-app.use(passport.initialize())
-app.use(passport.session())
+app.use(passport.initialize());
+app.use(passport.session());
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
@@ -92,7 +92,7 @@ app.post('/login', // wrap passport.authenticate call in a middleware function
                     return next(err);
                 }
                 return res.json(info);
-            })//res.status(401).send(info);
+            });//res.status(401).send(info);
         })(req, res);
     },
     // function to call once successfully authenticated
@@ -103,7 +103,7 @@ app.post('/login', // wrap passport.authenticate call in a middleware function
 app.get('/logout', function(req, res){
     req.logout();
     res.status(200).send( 'logged out!');
-    res.send(null)
+    res.send(null);
 });
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
