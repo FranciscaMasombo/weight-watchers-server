@@ -36,8 +36,12 @@ This is the server for the Client the
      $ npx cypress run --spec cypress/integration/tests addsubs.spec.js
      $ npx cypress run --spec cypress/integration/tests home.spec.js
      $ mocha test/submissions-model-test.js
+     
+### Continuous Integration and Test results
 
-### Sample Test execution
+[![Build Status](https://travis-ci.org/FranciscaMasombo/weight-watchers-server.svg?branch=master)](https://travis-ci.org/FranciscaMasombo/weight-watchers-server)
+
+https://travis-ci.org/FranciscaMasombo/weight-watchers-server
 
 
 ```bash
@@ -86,11 +90,6 @@ This is the server for the Client the
  -------------------------------|----------|----------|----------|----------|-------------------|
 
 ```
-### Continuous Integration and Test results
-
-[![Build Status](https://travis-ci.org/FranciscaMasombo/weight-watchers-server.svg?branch=master)](https://travis-ci.org/FranciscaMasombo/weight-watchers-server)
-
-https://travis-ci.org/FranciscaMasombo/weight-watchers-server
 
 ## Code
 
