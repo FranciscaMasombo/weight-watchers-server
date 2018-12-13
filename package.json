@@ -5,6 +5,7 @@
   "scripts": {
     "prebuild": "npm-run-all test clean",
     "test": "cross-env NODE_ENV=test nyc --reporter=lcov --reporter=text mocha test/submissions-model-test.js",
+    "publish-coverage": "nyc report --reporter=text-lcov | coveralls",
     "build": "babel ./ --out-dir lib/ --ignore ./node_modules,./.babelrc,./package.json,./package-lock.json,./test --copy-files",
     "server": "node lib/bin/www",
     "clean": "rimraf ./lib && mkdir lib",
