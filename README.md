@@ -28,7 +28,7 @@ Assignment for Web dev
 This is the server for the Client the
 
 ## API endpoints
-![Screenshot](photos/Capture.png)
+![Screenshot](https://github.com/FranciscaMasombo/weight-watchers-server/blob/master/photos/Capture.PNG)
 
 ## Data storage
 
