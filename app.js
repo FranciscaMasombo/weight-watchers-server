@@ -9,8 +9,9 @@ var usersRouter = require('./routes/users');
 
 const subs = require('./routes/submissions');
 const users = require('./routes/auth.js');
+var cors = require('cors');
 const app = express();
-
+app.use(cors());
 var session = require('express-session');
 
 let mongoose = require('mongoose');
@@ -18,7 +19,7 @@ const passport = require('passport');
 var mongodbUri ='mongodb://admin:welcome1@ds135653.mlab.com:35653/wwtdb';
 mongoose.connect(mongodbUri,{ useNewUrlParser: true });
 let db = mongoose.connection;
-
+mongoose.set('useFindAndModify', false);
 db.on('error', function (err) {
     console.log('Unable to Connect to [ ' + db.name + ' ]', err);
 });

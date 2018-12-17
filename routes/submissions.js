@@ -11,11 +11,11 @@ router.addSubmissions = (req, res) => {
     sub.email = req.body.email;// the requested value
     sub.number = req.body.number;// the requested value
     sub.gender = req.body.gender;// the requested value
+    sub.weightType = req.body.weightType;
     sub.age = req.body.age;// the requested value
     sub.startWeight = req.body.startWeight;// the requested value
     sub.goalWeight = req.body.goalWeight;// the requested value
     sub.currentWeight = req.body.currentWeight;// the requested value
-    sub.height = req.body.height;// the requested value
     sub.location = req.body.location;// the requested value
     sub.date = req.body.date;// the requested value
     sub.note = req.body.note;// the requested value

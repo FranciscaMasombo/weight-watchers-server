@@ -47,10 +47,10 @@ describe('SUBMISSION TESTS',function(){
             submission1.number = '89728128939';
             submission1.gender = 'male';
             submission1.age = 21;
+            submission1.weightType = 'Stones';
             submission1.startWeight = 245;
             submission1.goalWeight = 78;
             submission1.currentWeight = 90;
-            submission1.height = 78;
             submission1.location = 'dublin';
             submission1.date = '2018-09-12';
             submission1.note = 'icantwaittogetstarted';
@@ -66,10 +66,10 @@ describe('SUBMISSION TESTS',function(){
                     submission2.number = '89728128939';
                     submission2.gender = 'male';
                     submission2.age = 21;
+                    submission1.weightType = 'Stones';
                     submission2.startWeight = 245;
                     submission2.goalWeight = 78;
                     submission2.currentWeight = 90;
-                    submission2.height = 78;
                     submission2.location = 'dublin';
                     submission2.date = '2018-09-12';
                     submission2.note = 'icantwaittogetstarted';
@@ -105,10 +105,10 @@ describe('SUBMISSION TESTS',function(){
             number: '89728128939',
             gender: 'male',
             age: 21,
+            weightType: 'Stones',
             startWeight: 245,
             goalWeight: 78,
             currentWeight: 90,
-            height: 78,
             location: 'dublin',
             date: '2018-09-12',
             note: 'icantwaittogetstarted'
@@ -129,7 +129,6 @@ describe('SUBMISSION TESTS',function(){
             'gender':'male',
             'goalWeight':78,
             'currentWeight':90,
-            'height':78,
             'location':'dublin',
             'date':'2018-09-12'
         };
