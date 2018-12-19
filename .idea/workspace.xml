@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d0a6add3-73bd-41cd-8b51-dff8574913d3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/submissions-model.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/submissions-model.js" afterDir="false" />
-    </list>
+    <list default="true" id="d0a6add3-73bd-41cd-8b51-dff8574913d3" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -22,10 +18,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1978">
+              <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+            <state relative-caret-position="46">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -354,7 +359,7 @@
       <workItem from="1545094962411" duration="628000" />
       <workItem from="1545129182937" duration="30000" />
       <workItem from="1545129242647" duration="2711000" />
-      <workItem from="1545232166659" duration="4844000" />
+      <workItem from="1545232166659" duration="5607000" />
     </task>
     <task id="LOCAL-00001" summary="updates">
       <created>1544669519832</created>
@@ -546,7 +551,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="155301000" />
+    <option name="totallyTimeSpent" value="156064000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -559,14 +564,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4704142" visible="true" weight="0.17170112" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4704142" visible="true" weight="0.17170112" />
       <window_info id="Structure" order="1" sideWeight="0.5164645" side_tool="true" weight="0.3744038" />
       <window_info id="npm" order="2" sideWeight="0.53097343" side_tool="true" weight="0.23051947" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32409012" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49523053" weight="0.3847487" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49523053" visible="true" weight="0.3847487" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.7065026" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -574,7 +580,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49841017" weight="0.32582322" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5047695" side_tool="true" weight="0.7491228" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49523053" visible="true" weight="0.39688042" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49523053" weight="0.39688042" />
       <window_info anchor="bottom" id="Inspection Results" order="11" weight="0.8330404" />
       <window_info anchor="bottom" id="TypeScript" order="12" weight="0.32864675" />
       <window_info active="true" anchor="bottom" id="REST Client" order="13" weight="0.77642983" />
@@ -860,13 +866,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/submissions.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="14">
@@ -883,8 +882,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+        <state relative-caret-position="46">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1978">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="33" />
         </state>
       </provider>
     </entry>

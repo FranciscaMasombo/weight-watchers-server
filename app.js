@@ -9,10 +9,10 @@ var usersRouter = require('./routes/users');
 
 const subs = require('./routes/submissions');
 const users = require('./routes/auth.js');
-var cors = require('cors');
+// var cors = require('cors');
 const app = express();
 
-app.use(cors());
+// app.use(cors());
 var session = require('express-session');
 
 
