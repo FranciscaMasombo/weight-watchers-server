@@ -6,7 +6,7 @@ let SubmissionSchema =  new mongoose.Schema({
     email: { type: String, required: true },
     number: { type: String, required: true },
     gender: { type:String, required: true},
-    age: { type: Number, min: 16, max: 100, required: true },
+    age: { type: Number, min: 16, max: 70, required: true },
     weightType: { type:String, required: true},
     startWeight: { type:Number, required: true },
     goalWeight:{ type:Number, required: false },

@@ -1,19 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$APPLICATION_CONFIG_DIR$/javascript/nodejs/10.14.1/node-typings/node_modules/@types/node/index.d.ts" line="263" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0a6add3-73bd-41cd-8b51-dff8574913d3" name="Default Changelist" comment="updates">
+    <list default="true" id="d0a6add3-73bd-41cd-8b51-dff8574913d3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.nyc_output/2ddffc69-6d1a-4f47-b283-eca1ae665bbf.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.nyc_output/7081bbdb-1d26-41df-87c9-28f907601f96.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/submissions-model.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/submissions-model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/submissions.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/submissions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/submissions-model-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/submissions-model-test.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,33 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="94">
-              <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
-              <folding>
-                <element signature="e#2152#2944#0" />
-                <element signature="e#3026#3077#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/models/submissions-model.js">
+        <entry file="file://$PROJECT_DIR$/routes/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="7" column="43" lean-forward="true" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/submissions-model-test.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2536">
-              <caret line="115" column="28" lean-forward="true" selection-start-line="115" selection-start-column="28" selection-end-line="115" selection-end-column="28" />
+            <state relative-caret-position="92">
+              <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -98,8 +67,8 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/routes/submissions.js" />
         <option value="$PROJECT_DIR$/test/submissions-model-test.js" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/models/submissions-model.js" />
+        <option value="$PROJECT_DIR$/app.js" />
       </list>
     </option>
   </component>
@@ -107,9 +76,10 @@
     <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-11" />
-    <option name="width" value="980" />
-    <option name="height" value="1091" />
+    <option name="x" value="802" />
+    <option name="y" value="-20" />
+    <option name="width" value="654" />
+    <option name="height" value="728" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -117,13 +87,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="weight-watchers-server" type="b2602c69:ProjectViewProjectNode" />
               <item name="weight-watchers-server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="weight-watchers-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weight-watchers-server" type="462c0819:PsiDirectoryNode" />
+              <item name="coverage" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="weight-watchers-server" type="b2602c69:ProjectViewProjectNode" />
@@ -140,21 +114,18 @@
               <item name="weight-watchers-server" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="weight-watchers-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editorconfig.notification" value="View&#10;" />
     <property name="javascript.nodejs.core.library.configured.version" value="10.14.1" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PASSPORT" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs.mocha.mocha_node_package_dir" value="$PROJECT_DIR$/node_modules/mocha" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -377,7 +348,13 @@
       <workItem from="1545059951973" duration="3043000" />
       <workItem from="1545066650979" duration="325000" />
       <workItem from="1545067255935" duration="30000" />
-      <workItem from="1545067422655" duration="1335000" />
+      <workItem from="1545067422655" duration="1536000" />
+      <workItem from="1545069525754" duration="2167000" />
+      <workItem from="1545079852962" duration="98000" />
+      <workItem from="1545094962411" duration="628000" />
+      <workItem from="1545129182937" duration="30000" />
+      <workItem from="1545129242647" duration="2711000" />
+      <workItem from="1545232166659" duration="4844000" />
     </task>
     <task id="LOCAL-00001" summary="updates">
       <created>1544669519832</created>
@@ -526,7 +503,14 @@
       <option name="project" value="LOCAL" />
       <updated>1544704181765</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="updates">
+      <created>1545068904442</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1545068904442</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -562,7 +546,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="144622000" />
+    <option name="totallyTimeSpent" value="155301000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -574,16 +558,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="653" height="727" extended-state="0" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4704142" visible="true" weight="0.23051947" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4704142" visible="true" weight="0.17170112" />
       <window_info id="Structure" order="1" sideWeight="0.5164645" side_tool="true" weight="0.3744038" />
       <window_info id="npm" order="2" sideWeight="0.53097343" side_tool="true" weight="0.23051947" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32409012" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49523053" visible="true" weight="0.39718804" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49523053" weight="0.3847487" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.7065026" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -591,7 +574,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49841017" weight="0.32582322" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5047695" side_tool="true" weight="0.7491228" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49523053" weight="0.11599297" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49523053" visible="true" weight="0.39688042" />
       <window_info anchor="bottom" id="Inspection Results" order="11" weight="0.8330404" />
       <window_info anchor="bottom" id="TypeScript" order="12" weight="0.32864675" />
       <window_info active="true" anchor="bottom" id="REST Client" order="13" weight="0.77642983" />
@@ -648,21 +631,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/nodejs/10.14.1/node-typings/node_modules/@types/node/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="190" lean-forward="true" selection-start-line="190" selection-end-line="190" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/nodejs/10.14.1/node-typings/node_modules/@types/node/index.d.ts" />
     <entry file="file://$PROJECT_DIR$/models/submissions.js" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/nodejs/10.14.1/core-modules/internal/bootstrap/node.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="738" column="2" selection-start-line="738" selection-start-column="2" selection-end-line="738" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/nodejs/10.14.1/core-modules/internal/bootstrap/node.js" />
     <entry file="file://$PROJECT_DIR$/bin/www">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
@@ -692,13 +663,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/nodejs/10.14.1/core-modules/internal/modules/cjs/loader.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="549" lean-forward="true" selection-start-line="549" selection-end-line="549" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/nodejs/10.14.1/core-modules/internal/modules/cjs/loader.js" />
     <entry file="file://$PROJECT_DIR$/node_modules/mquery/lib/utils.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2645">
@@ -734,20 +699,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/nodejs/10.14.1/core-modules/internal/process/next_tick.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="62" column="18" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="39" lean-forward="true" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/nodejs/10.14.1/core-modules/internal/process/next_tick.js" />
     <entry file="file://$PROJECT_DIR$/node_modules/passport/lib/authenticator.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
@@ -777,13 +729,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/nodejs/10.14.1/core-modules/_http_outgoing.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="469" column="10" selection-start-line="469" selection-start-column="10" selection-end-line="469" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/nodejs/10.14.1/core-modules/_http_outgoing.js" />
     <entry file="file://$PROJECT_DIR$/routes/auth.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="943">
@@ -882,13 +828,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.eslintignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="10" selection-start-column="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md" />
     <entry file="file://$PROJECT_DIR$/photos/Capture.PNG">
       <provider selected="true" editor-type-id="images" />
@@ -907,35 +846,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/submissions.js">
+    <entry file="file://$PROJECT_DIR$/test/submissions-model-test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1367">
-          <caret line="94" column="20" selection-start-line="94" selection-start-column="20" selection-end-line="94" selection-end-column="20" />
+        <state relative-caret-position="470">
+          <caret line="115" column="28" selection-start-line="115" selection-start-column="28" selection-end-line="115" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.eslintignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
-          <folding>
-            <element signature="e#2152#2944#0" />
-            <element signature="e#3026#3077#0" />
-          </folding>
+        <state relative-caret-position="95">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/submissions-model-test.js">
+    <entry file="file://$PROJECT_DIR$/routes/submissions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2536">
-          <caret line="115" column="28" lean-forward="true" selection-start-line="115" selection-start-column="28" selection-end-line="115" selection-end-column="28" />
+        <state relative-caret-position="14">
+          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/submissions-model.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="7" column="43" lean-forward="true" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+        <state relative-caret-position="184">
+          <caret line="8" column="60" selection-start-line="8" selection-start-column="60" selection-end-line="8" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
         </state>
       </provider>
     </entry>
