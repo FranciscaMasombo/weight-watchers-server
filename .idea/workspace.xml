@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d0a6add3-73bd-41cd-8b51-dff8574913d3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nyc_output/7b2d34cc-e18b-4e20-af31-e6a395a9bb98.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nyc_output/8d9dc3d7-7482-494a-a6f8-6795ff0fc2a9.json" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -287,10 +288,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.test" />
         <item itemvalue="npm.lint" />
         <item itemvalue="npm.server:watch" />
         <item itemvalue="npm.server" />
-        <item itemvalue="npm.test" />
         <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
@@ -331,7 +332,7 @@
       <workItem from="1545094962411" duration="628000" />
       <workItem from="1545129182937" duration="30000" />
       <workItem from="1545129242647" duration="2711000" />
-      <workItem from="1545232166659" duration="11769000" />
+      <workItem from="1545232166659" duration="12052000" />
     </task>
     <task id="LOCAL-00001" summary="updates">
       <created>1544669519832</created>
@@ -523,7 +524,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="162226000" />
+    <option name="totallyTimeSpent" value="162509000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -537,13 +538,13 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4804805" visible="true" weight="0.29570746" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.740566" visible="true" weight="0.29570746" />
       <window_info id="Structure" order="1" sideWeight="0.5164645" side_tool="true" weight="0.3744038" />
-      <window_info id="npm" order="2" sideWeight="0.5195195" side_tool="true" weight="0.29570746" />
+      <window_info id="npm" order="2" sideWeight="0.25943395" side_tool="true" visible="true" weight="0.29570746" />
       <window_info id="Favorites" order="3" sideWeight="0.51724136" side_tool="true" weight="0.17170112" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32409012" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49523053" weight="0.64298093" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49523053" weight="0.3778163" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.7065026" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -551,7 +552,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49841017" weight="0.32582322" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5047695" side_tool="true" weight="0.7491228" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49523053" visible="true" weight="0.39688042" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49523053" visible="true" weight="0.6325823" />
       <window_info anchor="bottom" id="Inspection Results" order="11" weight="0.8330404" />
       <window_info anchor="bottom" id="TypeScript" order="12" weight="0.32864675" />
       <window_info active="true" anchor="bottom" id="REST Client" order="13" weight="0.77642983" />
