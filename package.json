@@ -12,10 +12,8 @@
     "clean": "rimraf ./lib && mkdir lib",
     "start": "npm run test && npm run build && npm run server",
     "server:watch": "cross-env NODE_ENV=dev nodemon --exec babel-node bin/www",
-    "test:watch": "npm run test -- --watch",
     "lint": "esw  ./test ./routes ./models/ app.js",
-    "lint:watch": "npm run lint -- --watch",
-    "postbuild": "npm run server"
+    "lint:watch": "npm run lint -- --watch"
   },
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
