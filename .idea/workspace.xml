@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d0a6add3-73bd-41cd-8b51-dff8574913d3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/node_modules/cross-env/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cross-env/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/www" beforeDir="false" afterPath="$PROJECT_DIR$/bin/www" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,22 +18,25 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/weight_watchers_server$test_submissions_model_test_js.dat" NAME="test\submissions-model-test.js Coverage Results" MODIFIED="1544626215058" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="MochaJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="weight-watchers-server" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="10" column="33" lean-forward="true" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+            <state relative-caret-position="-634">
+              <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bin/www">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-518">
-              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+            <state relative-caret-position="103">
+              <caret line="14" selection-start-line="14" selection-start-column="3" selection-end-line="15" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -70,11 +74,11 @@
         <option value="$PROJECT_DIR$/.coveralls.yml" />
         <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/routes/submissions.js" />
         <option value="$PROJECT_DIR$/test/submissions-model-test.js" />
         <option value="$PROJECT_DIR$/models/submissions-model.js" />
         <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/bin/www" />
       </list>
     </option>
@@ -346,7 +350,7 @@
       <workItem from="1545094962411" duration="628000" />
       <workItem from="1545129182937" duration="30000" />
       <workItem from="1545129242647" duration="2711000" />
-      <workItem from="1545232166659" duration="7862000" />
+      <workItem from="1545232166659" duration="8703000" />
     </task>
     <task id="LOCAL-00001" summary="updates">
       <created>1544669519832</created>
@@ -538,7 +542,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="158319000" />
+    <option name="totallyTimeSpent" value="159160000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -552,10 +556,10 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4704142" visible="true" weight="0.17170112" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4827586" visible="true" weight="0.17170112" />
       <window_info id="Structure" order="1" sideWeight="0.5164645" side_tool="true" weight="0.3744038" />
       <window_info id="npm" order="2" sideWeight="0.53097343" side_tool="true" weight="0.23051947" />
-      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Favorites" order="3" sideWeight="0.51724136" side_tool="true" visible="true" weight="0.17170112" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32409012" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49523053" weight="0.3847487" />
@@ -869,17 +873,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bin/www">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-518">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="-634">
+          <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/bin/www">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="10" column="33" lean-forward="true" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+        <state relative-caret-position="103">
+          <caret line="14" selection-start-line="14" selection-start-column="3" selection-end-line="15" selection-end-column="25" />
         </state>
       </provider>
     </entry>
