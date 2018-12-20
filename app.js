@@ -134,6 +134,6 @@ app.use(function(err, req, res) {
     res.status(err.status || 500)
     res.render('error')
 })
-
+// heroku config:set NPM_CONFIG_PRODUCTION=false
 
 module.exports = app
