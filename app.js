@@ -29,6 +29,9 @@ db.once('open', function () {
     console.log('Successfully Connected to [ ' + db.name + ' ]')
 })
 
+// Point static path to public
+app.use(express.static(path.join(__dirname, 'public')))
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'ejs')
