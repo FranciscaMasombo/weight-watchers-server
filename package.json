@@ -8,7 +8,7 @@
     "coverage": "cross-env NODE_ENV=test PORT=4000 nyc mocha test/submissions-model-test.js",
     "publish-coverage": "nyc report --reporter=text-lcov | coveralls",
     "build": "babel ./ --out-dir lib/ --ignore ./node_modules,./.babelrc,./package.json,./package-lock.json,./test --copy-files",
-    "server": "node lib/bin/www",
+    "server": "node ./bin/www",
     "clean": "rimraf ./lib && mkdir lib",
     "start": "npm run test && npm run build && npm run server",
     "server:watch": "cross-env NODE_ENV=dev nodemon --exec babel-node bin/www",
