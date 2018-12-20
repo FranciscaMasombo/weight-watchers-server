@@ -14,7 +14,7 @@ const app = express();
 app.use(cors());
 var session = require('express-session');
 
-
+var server = require('http').Server(app);
 let mongoose = require('mongoose');
 const passport = require('passport');
 var mongodbUri ='mongodb://admin:welcome1@ds135653.mlab.com:35653/wwtdb';
@@ -131,5 +131,5 @@ app.use(function(err, req, res, next) {
     res.status(err.status || 500);
     res.render('error');
 });
-
+server.listen(process.env.PORT || 8081);
 module.exports = app;

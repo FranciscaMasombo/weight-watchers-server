@@ -1,7 +1,7 @@
 {
     "include": [
-        "routes/*.js",
-        "models/*.js",
+        "routes/**/*.js",
+         "models/**/*.js",
         "app.js"
     ],
     "require": [
