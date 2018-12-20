@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d0a6add3-73bd-41cd-8b51-dff8574913d3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.nyc_output/b341e6e9-5605-4e9f-8c77-988cc2578107.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.nyc_output/e887e86d-6c41-4e91-85ec-37a2b4987132.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/www" beforeDir="false" afterPath="$PROJECT_DIR$/bin/www" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,18 +22,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="16">
+              <caret line="32" column="55" lean-forward="true" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="55" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Procfile.txt">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="16" lean-forward="true" selection-start-column="16" selection-end-column="16" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -108,6 +107,7 @@
         <option value="$PROJECT_DIR$/.eslintrc.json" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/bin/www" />
+        <option value="$PROJECT_DIR$/Procfile.txt" />
         <option value="$PROJECT_DIR$/app.js" />
       </list>
     </option>
@@ -390,7 +390,7 @@
       <workItem from="1545094962411" duration="628000" />
       <workItem from="1545129182937" duration="30000" />
       <workItem from="1545129242647" duration="2711000" />
-      <workItem from="1545232166659" duration="15942000" />
+      <workItem from="1545232166659" duration="16483000" />
     </task>
     <task id="LOCAL-00001" summary="updates">
       <created>1544669519832</created>
@@ -582,7 +582,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="166399000" />
+    <option name="totallyTimeSpent" value="166940000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -595,9 +595,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.740566" visible="true" weight="0.29570746" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.740566" visible="true" weight="0.29570746" />
       <window_info id="Structure" order="1" sideWeight="0.5164645" side_tool="true" weight="0.3744038" />
       <window_info id="npm" order="2" sideWeight="0.25943395" side_tool="true" weight="0.29570746" />
       <window_info id="Favorites" order="3" sideWeight="0.51724136" side_tool="true" weight="0.17170112" />
@@ -611,7 +610,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49761525" weight="0.9480069" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5055644" side_tool="true" weight="0.6377816" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4944356" weight="0.80762565" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.4944356" visible="true" weight="0.80762565" />
       <window_info anchor="bottom" id="Inspection Results" order="11" weight="0.8330404" />
       <window_info anchor="bottom" id="TypeScript" order="12" weight="0.32864675" />
       <window_info active="true" anchor="bottom" id="REST Client" order="13" weight="0.77642983" />
@@ -947,15 +946,19 @@
     <entry file="file://$PROJECT_DIR$/Procfile,txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
+    <entry file="file://$PROJECT_DIR$/Procfile.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state>
+          <caret column="16" lean-forward="true" selection-start-column="16" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Procfile.txt">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="32" column="55" lean-forward="true" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="55" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
