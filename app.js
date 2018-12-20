@@ -1,78 +1,78 @@
-var createError = require('http-errors');
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
+var createError = require('http-errors')
+var express = require('express')
+var path = require('path')
+var cookieParser = require('cookie-parser')
+var logger = require('morgan')
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+var indexRouter = require('./routes/index')
+var usersRouter = require('./routes/users')
 
-const subs = require('./routes/submissions');
-const users = require('./routes/auth.js');
-var cors = require('cors');
-const app = express();
-app.use(cors());
-var session = require('express-session');
+const subs = require('./routes/submissions')
+const users = require('./routes/auth.js')
+var cors = require('cors')
+const app = express()
 
-var server = require('http').Server(app);
-let mongoose = require('mongoose');
-const passport = require('passport');
-var mongodbUri ='mongodb://admin:welcome1@ds135653.mlab.com:35653/wwtdb';
-mongoose.connect(mongodbUri,{ useNewUrlParser: true });
-let db = mongoose.connection;
-mongoose.set('useFindAndModify', false);
+app.use(cors())
+var session = require('express-session')
+
+let mongoose = require('mongoose')
+const passport = require('passport')
+var mongodbUri ='mongodb://admin:welcome1@ds135653.mlab.com:35653/wwtdb'
+mongoose.connect(mongodbUri,{ useNewUrlParser: true })
+let db = mongoose.connection
+mongoose.set('useFindAndModify', false)
 db.on('error', function (err) {
-    console.log('Unable to Connect to [ ' + db.name + ' ]', err);
-});
+    console.log('Unable to Connect to [ ' + db.name + ' ]', err)
+})
 
 db.once('open', function () {
-    console.log('Successfully Connected to [ ' + db.name + ' ]');
-});
+    console.log('Successfully Connected to [ ' + db.name + ' ]')
+})
 
 // view engine setup
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views'))
+app.set('view engine', 'ejs')
 
-app.use(logger('dev'));
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
-app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(logger('dev'))
+app.use(express.json())
+app.use(express.urlencoded({ extended: false }))
+app.use(cookieParser())
+app.use(express.static(path.join(__dirname, 'public')))
 app.use(session({
     secret: 'botnyuserdetails', // session secret
     resave: true,
     saveUninitialized: true
-}));
-app.use(passport.initialize());
-app.use(passport.session());
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
+}))
+app.use(passport.initialize())
+app.use(passport.session())
+app.use('/', indexRouter)
+app.use('/users', usersRouter)
 
-function login(req, res, next)
-{
-    if (req.isAuthenticated())
-    {
-        return next();
-    } else
-    {
-        res.status(401).send('logged in or Singup');
-    }
-}
+// function login(req, res, next)
+// {
+//     if (req.isAuthenticated())
+//     {
+//         return next()
+//     } else
+//     {
+//         res.status(401).send('logged in or Singup')
+//     }
+// }
 
 // Custom Routes
 //gets
-app.get('/listSubmissions', subs.displayAll);
-app.get('/listOneSubmission/:id', subs.findSubmissionById);
-app.get('/findByLocation/:location', subs.findByLocation);
+app.get('/listSubmissions', subs.displayAll)
+app.get('/listOneSubmission/:id', subs.findSubmissionById)
+app.get('/findByLocation/:location', subs.findByLocation)
 //posts
-app.post('/add-submission',subs.addSubmissions);
+app.post('/add-submission',subs.addSubmissions)
 //puts
-app.put('/update-submission/:id',subs.updateSubmission);
+app.put('/update-submission/:id',subs.updateSubmission)
 //deletes
-app.delete('/delete-submission/:id',subs.deleteSubmission);
+app.delete('/delete-submission/:id',subs.deleteSubmission)
 
 
-app.post('/SignUp', users.SignUp);
+app.post('/SignUp', users.SignUp)
 /// Endpoint to login
 
 app.post('/login', // wrap passport.authenticate call in a middleware function
@@ -81,55 +81,55 @@ app.post('/login', // wrap passport.authenticate call in a middleware function
         passport.authenticate('local',  {session: false},function (error, user, info) {
             // this will execute in any case, even if a passport strategy will find an error
             // log everything to console
-            console.log(error);
-            console.log(user);
-            console.log(info);
+            console.log(error)
+            console.log(user)
+            console.log(info)
 
             if (error) {
-                res.status(401).send(error);
+                res.status(401).send(error)
             } if (!user) {
-                res.status(401).send(info);
+                res.status(401).send(info)
             }req.logIn(user, (err) => {
                 if (err) {
-                    return next(err);
+                    return next(err)
                 }
-                return res.json(info);
-            });//res.status(401).send(info);
-        })(req, res);
+                return res.json(info)
+            })//res.status(401).send(info);
+        })(req, res)
     },
     // function to call once successfully authenticated
     function (req, res) {
-        res.status(200).send('logged in!');
-    });
+        res.status(200).send('logged in!')
+    })
 // Endpoint to logout
 app.get('/logout', function(req, res){
-    req.logout();
-    res.status(200).send( 'logged out!');
-    res.send(null);
-});
+    req.logout()
+    res.status(200).send( 'logged out!')
+    res.send(null)
+})
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
-    next(createError(404));
-});
+    next(createError(404))
+})
 
 app.use(session({
     secret: 'secret',
     resave: false,
     saveUninitialized: true,
     cookie: { maxAge: 600000000 }
-}));
+}))
 if (process.env.NODE_ENV !== 'test') {
-    app.use(logger('dev'));
+    app.use(logger('dev'))
 }
 // error handler
-app.use(function(err, req, res, next) {
+app.use(function(err, req, res) {
     // set locals, only providing error in development
-    res.locals.message = err.message;
-    res.locals.error = req.app.get('env') === 'development' ? err : {};
+    res.locals.message = err.message
+    res.locals.error = req.app.get('env') === 'development' ? err : {}
 
     // render the error page
-    res.status(err.status || 500);
-    res.render('error');
-});
-server.listen(process.env.PORT || 8081);
-module.exports = app;
+    res.status(err.status || 500)
+    res.render('error')
+})
+
+module.exports = app

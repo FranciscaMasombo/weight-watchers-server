@@ -1,6 +1,7 @@
-let mongoose = require('mongoose');
-const UserSchema = require("mongoose");
+let mongoose = require('mongoose')
+const UserSchema = require('mongoose')
 let SubmissionSchema =  new mongoose.Schema({
+
     fname: { type:String, required: true},
     lname: { type:String, required: true},
     email: { type: String, required: true },
