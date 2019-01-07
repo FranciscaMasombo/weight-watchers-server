@@ -7,7 +7,7 @@ Email : Frmm97@gmail.com
 
 ## Overview
 Assignment for Web dev
-This is the server for the Client the
+This is the server for the Client the https://github.com/FranciscaMasombo/weight-watchers-client
 
 ## API endpoints
 ![Screenshot](https://github.com/FranciscaMasombo/weight-watchers-server/blob/master/photos/Capture.PNG)
