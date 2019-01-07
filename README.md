@@ -1,23 +1,5 @@
 # weight-watchers-server          [![Build Status](https://travis-ci.org/FranciscaMasombo/weight-watchers-server.svg?branch=master)](https://travis-ci.org/FranciscaMasombo/weight-watchers-server)            [![Coverage Status](https://coveralls.io/repos/github/FranciscaMasombo/weight-watchers-server/badge.svg?branch=master)](https://coveralls.io/github/FranciscaMasombo/weight-watchers-server?branch=master)
 
-
-
-### Table of contents
-
-<!--ts-->
-   * [Contact info](#Contact-info)
-   * [Overview](#Overview)
-   * [API endpoints](#API-endpoints)
-   * [Data storage](#Data-storage)
-      * [STDIN](#stdin)
-      * [Local files](#local-files)
-   * [Testing](#Testing)
-     * [Sample Test execution](#Sample-Test-execution)
-     * [Continuous Integration and Test results](#Continuous-Integration-and-Test-results)
-   * [Code](#Code)
-   * [Build Setup](#Build-Setup)
-   * [Web Application](#Client)
-<!--te-->
 ### Contact info
 Name  : Fran
 
